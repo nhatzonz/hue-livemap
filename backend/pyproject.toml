@@ -1,0 +1,37 @@
+[project]
+name = "hue-livemap-backend"
+version = "0.1.0"
+description = "HUE-LIVEMAP API: trạng thái đoạn đường thời gian thực cho thành phố Huế"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "sqlalchemy>=2.0.30",
+    "geoalchemy2>=0.15",
+    "psycopg[binary]>=3.2",
+    "alembic>=1.13",
+    "pyjwt>=2.15.1",
+    "pillow>=12.3.0",
+    "python-multipart>=0.0.32",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2",
+    "ruff>=0.5",
+    "httpx2>=2.13.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]  # formatter lo độ dài dòng; chuỗi SQL/thông báo dài được giữ nguyên

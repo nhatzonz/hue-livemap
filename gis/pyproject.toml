@@ -1,0 +1,25 @@
+[project]
+name = "hue-livemap-gis"
+version = "0.1.0"
+description = "Pipeline mạng lưới đoạn đường cho HUE-LIVEMAP"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "shapely>=2.0",
+    "pyproj>=3.6",
+    "psycopg[binary]>=3.2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.2", "ruff>=0.5"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["scripts"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]  # formatter lo độ dài dòng; chuỗi SQL/thông báo dài được giữ nguyên

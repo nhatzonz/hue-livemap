@@ -1,0 +1,41 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / Expo
+node_modules/
+.expo/
+dist/
+web-build/
+*.tsbuildinfo
+npm-debug.*
+yarn-error.*
+/mobile/ios/
+/mobile/android/
+
+# Media uploaded in dev
+/backend/var/
+
+# GIS raw downloads (large, re-fetchable)
+/gis/data/raw/*
+!/gis/data/raw/.gitkeep
+*.qgs~
+
+# Tài liệu kế hoạch nội bộ (chỉ giữ cục bộ)
+/PROJECT_PLAN.md

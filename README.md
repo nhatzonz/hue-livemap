@@ -2,8 +2,6 @@
 
 Bản đồ trạng thái đô thị thời gian thực cấp đoạn đường và kiệt cho thành phố Huế: ngập, vật cản, giao thông. Mỗi trạng thái đều kèm độ tin cậy và thời điểm cập nhật.
 
-Kế hoạch đầy đủ: [PROJECT_PLAN.md](PROJECT_PLAN.md)
-
 | Thư mục | Nội dung | Trạng thái |
 |---|---|---|
 | [backend/](backend/) | FastAPI + PostgreSQL/PostGIS | Tuần 5: auth thiết bị, phản ánh, ảnh, status engine, lịch sử, 76 test |

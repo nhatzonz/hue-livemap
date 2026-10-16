@@ -1,0 +1,37 @@
+{
+  "name": "hue-livemap-mobile",
+  "version": "0.1.0",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@tanstack/react-query": "^5.104.3",
+    "expo": "~58.0.12",
+    "expo-constants": "~58.0.12",
+    "expo-crypto": "~58.0.6",
+    "expo-image-manipulator": "~58.0.14",
+    "expo-image-picker": "~58.0.10",
+    "expo-linking": "~58.0.13",
+    "expo-location": "~58.0.16",
+    "expo-router": "~58.0.21",
+    "expo-secure-store": "~58.0.2",
+    "expo-status-bar": "~58.0.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-maps": "1.29.11",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.0",
+    "zustand": "^5.0.15"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "lint": "eslint .",
+    "doctor": "npx expo-doctor"
+  },
+  "private": true,
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "^58.0.4"
+  }
+}
